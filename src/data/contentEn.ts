@@ -1,0 +1,792 @@
+import type {
+  ActivityDivision,
+  CommercialLicenseDetails,
+  CompanyInfo,
+  CompanyIntroduction,
+  EquipmentShowcaseItem,
+  FullTrainingCourse,
+  GalleryItem,
+  GovernmentApprovalItem,
+  Industry,
+  InstrumentationShowcaseItem,
+  MainServiceCard,
+  NavItem,
+  OverviewCategory,
+  PopularTrainingProgram,
+  ProcessStep,
+  WhyChooseUsItem,
+} from './types';
+
+export const companyInfo: CompanyInfo = {
+  nameEn: 'ClearEarth Safety Consultancy LLC',
+  nameAr: 'كليرايرث لاستشارات السلامة ش.ذ.م.م',
+  tagline: 'Build Skills. Work Safely.',
+  phone1: '+971524848216',
+  phone1Display: '+971 52 484 8216',
+  phone2: '+971541539115',
+  phone2Display: '+971 54 153 9115',
+  phone3: '+971547399893',
+  phone3Display: '+971 54 739 9893',
+  email: 'clearearthsafety@gmail.com',
+  emailAlt: 'christelacula24@gmail.com',
+  locationEn: 'Dubai, United Arab Emirates',
+  locationAr: 'دبي، الإمارات العربية المتحدة',
+  addressEn: 'Office A-092, Hor Al Anz & Al Satwa, Dubai, UAE',
+  addressAr: 'مكتب رقم A-092 هور العنز والسطوة، دبي، الإمارات العربية المتحدة',
+  whatsapp: '+971524848216',
+  whatsappLink: 'https://wa.me/971524848216?text=Hello%20ClearEarth%20Safety%20Consultancy%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.',
+};
+
+export const navItemsEn: NavItem[] = [
+  { id: 'home', label: 'Home', href: '#home' },
+  { id: 'about', label: 'About', href: '#about' },
+  { id: 'training', label: 'Training Programs', href: '#training' },
+  { id: 'equipment', label: 'Equipment', href: '#equipment' },
+  { id: 'certification', label: 'Certification', href: '#certification' },
+  { id: 'profile', label: 'Company Profile', href: '#company-profile' },
+  { id: 'gallery', label: 'Gallery', href: '#gallery' },
+  { id: 'contact', label: 'Contact', href: '#contact' },
+];
+
+export const heroContentEn = {
+  badge: 'CLEAREARTH SAFETY CONSULTANCY LLC',
+  headline: 'Build Skills. Work Safely.',
+  subheadline: 'Safety. Compliance. Confidence.',
+  description: 'Professional safety training, equipment inspection, certification and consultancy services for construction, industrial and offshore sectors across Dubai and the UAE.',
+  ctaQuote: 'Get a Quote',
+  ctaTraining: 'Explore Training Programs',
+  ctaServices: 'Explore Services',
+  ctaContact: 'Contact Us',
+  trustStrip: [
+    'Certified Training',
+    'Experienced Trainers',
+    'On-site & Off-shore',
+    'International Standards',
+    'Trusted in UAE',
+  ],
+};
+
+export const aboutContentEn = {
+  tag: 'About ClearEarth',
+  heading: 'Building Skills & Enforcing Safety Excellence Across the UAE',
+  shortBio: 'The ClearEarth safety consultancy LLC is established last July 27, 2026, in Dubai, UAE, dedicated to delivering independent third-party inspection, technical certification, practical workforce training, and industrial instrumentation solutions.',
+  commitmentTitle: 'Our Safety Mission',
+  commitmentText: 'Dedicated to helping industrial, offshore, and construction organizations protect workforce personnel and maintain complete operational integrity through reliable, certified engineering practices.',
+  pillars: [
+    { title: 'Workplace Safety', desc: 'Practical safety oversight and hazard control designed for high-risk industrial environments.' },
+    { title: 'Asset Integrity', desc: 'Rigorous engineering inspection of heavy plant, cranes, pressure vessels, and lifting gear.' },
+    { title: 'Regulatory Compliance', desc: 'Seamless adherence to Dubai statutory safety standards, EIAC codes, and ISO guidelines.' },
+    { title: 'Workforce Readiness', desc: 'Hands-on competency programs that train operators to work safely and productively.' },
+  ],
+};
+
+export const quickOverviewEn: OverviewCategory[] = [
+  {
+    number: '01',
+    title: 'Safety Training',
+    description: 'Accredited technical and operator competency programs building site safety confidence.',
+    iconName: 'GraduationCap',
+    linkId: 'training',
+  },
+  {
+    number: '02',
+    title: 'Equipment Inspection',
+    description: 'Statutory inspection, proof load testing, and thorough examination for on-shore and off-shore assets.',
+    iconName: 'ShieldCheck',
+    linkId: 'certification',
+  },
+  {
+    number: '03',
+    title: 'Equipment Certification',
+    description: 'Official Dubai Municipality-aligned certifications, green tagging, and safety pass issuance.',
+    iconName: 'Award',
+    linkId: 'certification',
+  },
+  {
+    number: '04',
+    title: 'Instrumentation',
+    description: 'Testing, calibration, and supply of industrial pressure gauges, flow meters, and safety gas detectors.',
+    iconName: 'Gauge',
+    linkId: 'instrumentation',
+  },
+];
+
+export const mainServicesEn: MainServiceCard[] = [
+  {
+    id: 'lifting-equipment',
+    title: 'Lifting Equipment Inspection',
+    shortDesc: 'Comprehensive safety examination and load verification for mobile, tower, crawler, and overhead cranes.',
+    image: '/images/lifting-inspection.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Mobile Cranes, Crawler Cranes & Tower Cranes',
+      'Overhead Traveling Cranes & Gantry Systems',
+      'Electric & Manual Hoists, Winches and Derricks',
+      'Proof Load Testing & Deflection Verification',
+      'Safety Limit Switch & Emergency Brake Verification',
+    ],
+  },
+  {
+    id: 'lifting-accessories',
+    title: 'Lifting Accessories',
+    shortDesc: 'Rigorous safety evaluation for wire rope slings, alloy shackles, webbing slings, and rigging hardware.',
+    image: '/images/lifting-accessories.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Steel Wire Rope Slings & Grade 80/100 Chain Assemblies',
+      'Forged Steel Shackles, Eyebolts, Swivels & Turnbuckles',
+      'Synthetic Polyester Webbing Slings & Round Slings',
+      'Spreader Beams, Lifting Beams & Clamps',
+      'Safe Working Load (SWL) Verification & Color Tagging',
+    ],
+  },
+  {
+    id: 'pressure-vessels',
+    title: 'Pressure Vessel Inspection',
+    shortDesc: 'Integrity assessment and certification for compressed air receivers, boilers, and industrial storage tanks.',
+    image: '/images/pressure-vessel.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Compressed Air Receivers & Nitrogen Storage Vessels',
+      'Steam Boilers, Autoclaves & Shell Heat Exchangers',
+      'Ultrasonic Shell Wall Thickness Measurement',
+      'Pressure Relief Valve (PRV) Calibration & Popping Tests',
+      'Internal & External Visual Corrosion Audits',
+    ],
+  },
+  {
+    id: 'earth-moving',
+    title: 'Earth Moving Machinery',
+    shortDesc: 'Mechanical and functional safety inspection for excavators, loaders, bulldozers, and heavy plant.',
+    image: '/images/heavy-equipment.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Hydraulic Excavators, JCBs & Backhoe Loaders',
+      'Wheel Loaders, Skid Steers (Bobcats) & Motor Graders',
+      'Articulated Dump Trucks, Telehandlers & Rollers',
+      'ROPS/FOPS Protective Structure Integrity Checks',
+      'Hydraulic Pressure, Steering & Service Brake Testing',
+    ],
+  },
+  {
+    id: 'scaffolding',
+    title: 'Scaffolding Inspection',
+    shortDesc: 'Independent structural audits, tie verification, stability checks, and green tagging for work at height.',
+    image: '/images/scaffolding.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Independent Tube & Fitting and System Scaffolds',
+      'Baseplate, Soleplate & Ground Bearing Capacity Checks',
+      'Anchor Tie Patterns, Guardrails, Toe-boards & Access',
+      'Periodic Load Stability & Weather Defect Inspection',
+      'Official Green Tag Handover Certification',
+    ],
+  },
+  {
+    id: 'ndt-testing',
+    title: 'Non-Destructive Testing (NDT)',
+    shortDesc: 'Advanced flaw detection and weld examination without damaging components or interrupting operations.',
+    image: '/images/ndt-testing.jpg',
+    category: 'Inspection & Certification',
+    bullets: [
+      'Ultrasonic Testing (UT) for Subsurface Flaws',
+      'Magnetic Particle Testing (MT) for Surface Cracks',
+      'Liquid Dye Penetrant Testing (PT)',
+      'Visual & Optical Weld Quality Examination (VT)',
+      'Structural Steel & Crane Boom Weld Evaluation',
+    ],
+  },
+];
+
+export const assessmentTrainingItems = [
+  { id: 'as-earth', title: 'Earth Moving Machine Operator Training', category: 'Heavy Equipment', desc: 'Excavators, wheel loaders, backhoes, bobcats, bulldozers.' },
+  { id: 'as-lifting', title: 'Lifting Equipment Operator Training', category: 'Cranes & Hoists', desc: 'Mobile cranes, crawler cranes, overhead cranes, boom trucks.' },
+  { id: 'as-rigger', title: 'Rigger Signal Man and Slingers and Banksman Training', category: 'Lifting & Rigging', desc: 'International hand signals, sling hitching angles, banksman duties.' },
+  { id: 'as-scaffold', title: 'Scaffolding Erector and Supervisor Training', category: 'Work at Height', desc: 'PASMA aligned erection methods, stability checks, supervisor sign-off.' },
+  { id: 'as-fire', title: 'Fire Fighting Training', category: 'Emergency Response', desc: 'Live fire suppression, extinguisher techniques, site evacuation.' },
+  { id: 'as-hse', title: 'HSE Training', category: 'Health & Safety', desc: 'Risk assessment, Job Safety Analysis (JSA), hazard identification.' },
+  { id: 'as-heavy-op', title: 'Heavy Equipment Operator Training', category: 'Plant Machinery', desc: 'Ground stability, blind-spot maneuvering, daily pre-checks.' },
+  { id: 'as-lift-sup', title: 'Lifting Supervisor Training', category: 'Critical Lifts', desc: 'Lift planning calculations, ground load bearing, tandem lifts.' },
+  { id: 'as-welder', title: 'Welder Training 1G, 2G, 3G, 4G, 5G & 6G', category: 'Technical Welding', desc: 'Multi-position welding qualifications, hot work safety, joint testing.' },
+  { id: 'as-first-aid', title: 'First Aid Training', category: 'Life Support', desc: 'CPR, AED operation, trauma management, burn care, medical triage.' },
+  { id: 'as-confined', title: 'Confined Space Training', category: 'High-Risk Safety', desc: 'Atmospheric gas testing, ventilation, entry permits, emergency rescue.' },
+  { id: 'as-mechanic', title: 'Heavy Equipment Mechanic Training', category: 'Technical Engineering', desc: 'Hydraulic safety diagnostics, mechanical maintenance, preventive audits.' },
+];
+
+export const equipmentShowcaseEn: EquipmentShowcaseItem[] = [
+  {
+    id: 'eq-jcb-excavator',
+    name: 'JCB & Hydraulic Excavator',
+    category: 'Earth Moving Machinery',
+    image: '/images/heavy-equipment.jpg',
+    description: 'Tracked and wheeled hydraulic excavators certified for deep trenching, rock breaking, and heavy excavation.',
+    specs: ['Operating Weight: 13T – 48T', 'Bucket Capacity: 0.5m³ – 2.5m³', 'ROPS / FOPS Certified Cab', 'Full Hydraulic Load Audit'],
+  },
+  {
+    id: 'eq-wheel-loader',
+    name: 'Wheel Loader',
+    category: 'Earth Moving Machinery',
+    image: '/images/industry-heavyequipment.jpg',
+    description: 'High-capacity articulated wheel loaders for bulk aggregate handling, site clearing, and stockpile management.',
+    specs: ['Articulated Steering System', 'Bucket Capacity: 2.0m³ – 5.5m³', 'Statutory Brake Test Verified', 'Reversing Alarm & Camera Audited'],
+  },
+  {
+    id: 'eq-backhoe-loader',
+    name: 'Backhoe Loader (JCB 3DX/4DX)',
+    category: 'Multi-Purpose Plant',
+    image: '/images/heavy-equipment.jpg',
+    description: 'Versatile dual-action utility loader and backhoe for urban excavation, utility trenches, and site loading.',
+    specs: ['Dual Stabilizer Pad Verification', 'Extendable Dipper Arm', '4-in-1 Multipurpose Bucket', 'Hydraulic Safety Relief Tested'],
+  },
+  {
+    id: 'eq-mobile-crane',
+    name: 'Mobile Crane (All-Terrain & Rough Terrain)',
+    category: 'Lifting Machinery',
+    image: '/images/lifting-inspection.jpg',
+    description: 'Telescopic boom mobile cranes tested for high-tonnage industrial lifts and challenging off-road conditions.',
+    specs: ['Capacity: 25T – 500T', 'Safe Load Indicator (SLI) Calibrated', 'Outrigger Pressure Verified', 'Proof Load Testing Certified'],
+  },
+  {
+    id: 'eq-tower-crane',
+    name: 'Tower Crane',
+    category: 'High-Rise Construction',
+    image: '/images/industry-construction.jpg',
+    description: 'Top-slewing and luffing jib tower cranes inspected for high-rise building projects across Dubai and UAE.',
+    specs: ['Trolley & Hoist Limit Checks', 'Mast Tie & Base Anchor Inspection', 'Anemometer Wind Speed Verified', 'Brake Torque Calibrated'],
+  },
+  {
+    id: 'eq-forklift',
+    name: 'Industrial Forklift Truck',
+    category: 'Material Handling',
+    image: '/images/industry-logistics.jpg',
+    description: 'Diesel, LPG, and electric counterbalance forklifts evaluated for warehouse and industrial yard logistics.',
+    specs: ['Capacity: 1.5T – 16T', 'Mast Chain Elongation Tested', 'Tilt & Lift Cylinder Audits', 'Overhead Guard (OHG) Certified'],
+  },
+  {
+    id: 'eq-manlift',
+    name: 'Manlift / Boom Lift / Scissor Lift',
+    category: 'Mobile Elevated Work Platform (MEWP)',
+    image: '/images/industry-infrastructure.jpg',
+    description: 'Articulated boom lifts, telescopic platforms, and electric scissor lifts inspected for elevated maintenance.',
+    specs: ['Working Height: 10m – 43m', 'Emergency Lowering Function Tested', 'Tilt Alarm & Load Cell Verified', 'Platform Harness Anchor Tested'],
+  },
+  {
+    id: 'eq-generator',
+    name: 'Industrial Diesel Generator',
+    category: 'Power Generation',
+    image: '/images/industry-manufacturing.jpg',
+    description: 'Heavy-duty soundproof diesel generators verified for construction power and off-grid emergency supply.',
+    specs: ['Rating: 50 kVA – 2000 kVA', 'Earth Fault Protection Tested', 'Circuit Breaker Trip Tested', 'Exhaust & Fuel Safety Verified'],
+  },
+  {
+    id: 'eq-air-compressor',
+    name: 'Mobile Air Compressor',
+    category: 'Pneumatic Power',
+    image: '/images/pressure-vessel.jpg',
+    description: 'High-pressure diesel portable screw compressors for sandblasting, pneumatic tools, and pipeline testing.',
+    specs: ['Operating Pressure: 7 – 25 Bar', 'Safety Pressure Relief Tested', 'Air Receiver Vessel Inspected', 'High Temp Shutoff Verified'],
+  },
+  {
+    id: 'eq-scaffolding-systems',
+    name: 'Scaffolding Systems & Components',
+    category: 'Temporary Works',
+    image: '/images/scaffolding.jpg',
+    description: 'Cuplok, Kwikstage, and tube-and-coupler scaffolding certified for heavy external facade and industrial access.',
+    specs: ['BS/EN 12810/12811 Compliant', 'Coupler Slip Test Verified', 'Plank Integrity Audited', 'Green Tag Handover Standard'],
+  },
+  {
+    id: 'eq-lifting-equipment',
+    name: 'Lifting Equipment & Gantry Systems',
+    category: 'Lifting Machinery',
+    image: '/images/lifting-inspection.jpg',
+    description: 'Overhead traveling cranes, electric wire rope hoists, and monorail gantries verified for manufacturing plants.',
+    specs: ['Proof Load Deflection Checked', 'Hook Throat Dimension Audited', 'Pendant & Radio Remote Tested', 'End Stop Buffers Verified'],
+  },
+  {
+    id: 'eq-lifting-accessories',
+    name: 'Lifting Accessories & Rigging Tackle',
+    category: 'Rigging Hardware',
+    image: '/images/lifting-accessories.jpg',
+    description: 'Alloy steel shackles, master links, wire rope slings, and spreader beams proof-tested and color-coded.',
+    specs: ['SWL Clearly Marked', 'Magnetic Particle Crack Tested', 'Chain Pitch Elongation Audited', 'Quarterly Color Tagged'],
+  },
+];
+
+export const instrumentationShowcaseEn: InstrumentationShowcaseItem[] = [
+  {
+    id: 'inst-pressure-gauges',
+    name: 'Pressure Gauges & Transmitters',
+    image: '/images/instrumentation.jpg',
+    description: 'Analog dial gauges, digital test gauges, differential transmitters, and hydrostatic test recorders.',
+    features: ['Range: 0 to 2500 Bar', 'Deadweight Tester Calibration', 'Accuracy Classes: 0.1% to 1.0%', 'Hydrostatic Test Certification'],
+  },
+  {
+    id: 'inst-electrical',
+    name: 'Electrical Instruments & Meggers',
+    image: '/images/industry-engineering.jpg',
+    description: 'Insulation resistance testers (Megger), high-voltage clamp meters, ground resistance meters, and multimeters.',
+    features: ['Insulation up to 10 kV', 'True-RMS Multimeters', 'Earth Resistance 4-Pole Testing', 'Safety CAT IV 600V / CAT III 1000V'],
+  },
+  {
+    id: 'inst-flow-meters',
+    name: 'Flow Meters & Controllers',
+    image: '/images/industry-oilgas.jpg',
+    description: 'Electromagnetic, ultrasonic transit-time, and turbine flow meters calibrated for industrial fluids and cooling lines.',
+    features: ['Inline & Clamp-On Ultrasonic', 'Liquid & Gas Flow Verification', 'High Repeatability & Zero Drift', 'NIST Traceable Calibration'],
+  },
+  {
+    id: 'inst-temp-gauges',
+    name: 'Temperature Gauges & Thermometers',
+    image: '/images/industry-manufacturing.jpg',
+    description: 'Bimetallic thermometers, RTD Pt100 sensors, thermocouple probes, and calibrated infrared thermal cameras.',
+    features: ['Range: -50°C to +800°C', 'Dry Block Well Calibration', 'Dual Scale Display (°C / °F)', 'Thermowell Integrity Checked'],
+  },
+  {
+    id: 'inst-surveying',
+    name: 'Surveying & Alignment Instruments',
+    image: '/images/industry-construction.jpg',
+    description: 'Total stations, automatic optical levels, electronic theodolites, and rotary lasers calibrated for site grading.',
+    features: ['Sub-Millimeter Optical Collimation', 'EDM Laser Distance Verification', 'Dual Axis Compensator Testing', 'Calibration Certificate Provided'],
+  },
+  {
+    id: 'inst-gas-detection',
+    name: 'Gas Equipment & Multi-Gas Detectors',
+    image: '/images/ndt-testing.jpg',
+    description: 'Single and 4-gas portable monitors (LEL, O2, H2S, CO) and fixed hazardous area detection systems.',
+    features: ['Bump Testing & Span Gas Calibrated', 'Intrinsically Safe ATEX/IECEx', 'Instant Visual & Audible Alarm', 'Confined Space Ready'],
+  },
+];
+
+export const fullTrainingCoursesEn: FullTrainingCourse[] = [
+  // ISO & Management
+  { id: 'c-iso-train', title: 'ISO STANDARD TRAINING', category: 'ISO & Compliance', description: 'Comprehensive training on ISO 9001 (QMS), ISO 45001 (OH&S), and ISO 14001 (EMS) implementation and auditing.', duration: '2 - 3 Days', certification: 'ISO Competency Certificate' },
+  { id: 'c-iso-consult', title: 'ISO CONSULTANCY AND CERTIFICATION', category: 'ISO & Compliance', description: 'Expert gap analysis, documentation preparation, internal audits, and external certification support.', duration: 'Custom Scope', certification: 'Accredited ISO Certification' },
+  { id: 'c-food-safety', title: 'FOOD SAFETY AND HYGIENE TRAINING', category: 'Health & Hygiene', description: 'HACCP principles, cross-contamination prevention, food handler hygiene, and UAE regulatory compliance.', duration: '1 Day', certification: 'Food Safety Certificate' },
+  { id: 'c-infection', title: 'INFECTION PREVENTION AND CONTROL TRAINING', category: 'Health & Hygiene', description: 'Clinical and occupational infection mitigation, biohazard containment, and sanitary sterilization protocols.', duration: '1 Day', certification: 'Infection Control Certificate' },
+
+  // Fire & Emergency
+  { id: 'c-firefighting', title: 'FIREFIGHTING SAFETY TRAINING', category: 'Fire & Emergency', description: 'Fire chemistry, classes of fire, practical live fire extinguisher operation, and emergency smoke escape.', duration: '1 Day', certification: 'Civil Defense Aligned' },
+  { id: 'c-fire-warden', title: 'FIRE WARDEN TRAINING', category: 'Fire & Emergency', description: 'Leadership during fire emergencies, floor sweeping, headcount coordination, and alarm panel response.', duration: '1 Day', certification: 'Fire Warden Certificate' },
+  { id: 'c-fire-watcher', title: 'FIRE WATCHER TRAINING', category: 'Fire & Emergency', description: 'Hot work monitoring during welding/cutting, sparks containment, continuous vigilance, and suppression readiness.', duration: '1 Day', certification: 'Fire Watcher Qualification' },
+  { id: 'c-first-aid', title: 'FIRST AID TRAINING', category: 'Fire & Emergency', description: 'Basic Life Support (BLS), CPR, automated external defibrillator (AED) usage, bleeding control, and shock management.', duration: '1 Day', certification: 'First Aider Certificate' },
+  { id: 'c-medic-aid-adv', title: 'MEDIC FIRST AID ADVANCE TRAINING', category: 'Fire & Emergency', description: 'Advanced trauma care, spinal immobilization, airway management, fractures, burn treatment, and medical triage.', duration: '2 Days', certification: 'Advanced Medic Certificate' },
+
+  // Specialized Safety & Hazardous
+  { id: 'c-h2s', title: 'HYDROGEN SULFIDE (H2S) AWARENESS TRAINING', category: 'Hazardous Workplace', description: 'Toxic gas properties, exposure thresholds, SCBA emergency breathing equipment, and rapid evacuation.', duration: '1 Day', certification: 'H2S Safety Pass' },
+  { id: 'c-hys', title: 'HYS AWARENESS TRAINING', category: 'Hazardous Workplace', description: 'Workplace hygiene, chemical vapor handling, respiratory protection, and occupational health preservation.', duration: '1 Day', certification: 'Occupational Hygiene Certificate' },
+  { id: 'c-confined', title: 'CONFINED SPACE ENTRY TRAINING', category: 'Hazardous Workplace', description: 'Atmospheric gas testing, mechanical ventilation, entry permits, entrant/attendant roles, and emergency rescue.', duration: '1 - 2 Days', certification: 'Confined Space Entrant' },
+  { id: 'c-gas-tester', title: 'GAS TESTER AWARENESS TRAINING', category: 'Hazardous Workplace', description: 'Calibrated multi-gas detector operation, flammable lower explosive limits (LEL), oxygen deficiency, and toxicity checks.', duration: '1 Day', certification: 'Certified Gas Tester' },
+  { id: 'c-hazmat', title: 'HAZMAT TRAINING', category: 'Hazardous Workplace', description: 'Hazardous materials classification, dangerous chemical storage, segregation, spill response, and neutralization.', duration: '1 - 2 Days', certification: 'HAZMAT Operations' },
+  { id: 'c-dgr', title: 'DANGEROUS GOODS REGULATION TRAINING', category: 'Hazardous Workplace', description: 'Safe packaging, marking, labeling, storage, and transport of regulated dangerous commodities.', duration: '2 Days', certification: 'DGR Compliance' },
+  { id: 'c-coshh', title: 'COSHH TRAINING', category: 'Hazardous Workplace', description: 'Control of Substances Hazardous to Health, Safety Data Sheet (SDS) interpretation, and PPE barrier selection.', duration: '1 Day', certification: 'COSHH Assessor' },
+
+  // Scaffolding & Height
+  { id: 'c-scaffold-pasma', title: 'SCAFFOLDING ERECTION TRAINING BY PASMA', category: 'Scaffolding & Height', description: 'Safe erection, alteration, and dismantling of mobile alloy scaffolding towers according to PASMA standard.', duration: '1 Day', certification: 'PASMA Aligned Card' },
+  { id: 'c-scaffold-insp', title: 'SCAFFOLDING INSPECTOR TRAINING', category: 'Scaffolding & Height', description: 'Statutory structural inspection, load calculation, bracing verification, fault diagnosis, and green tagging.', duration: '2 Days', certification: 'Scaffold Inspector Certificate' },
+  { id: 'c-scaffold-sup', title: 'SCAFFOLDING ERECTOR AND SUPERVISOR TRAINING', category: 'Scaffolding & Height', description: 'Tube-and-fitting scaffolding erection, anchor tie verification, supervisor safety sign-off, and handover.', duration: '2 - 3 Days', certification: 'Scaffold Supervisor Card' },
+  { id: 'c-height', title: 'WORK AT HEIGHT TRAINING', category: 'Scaffolding & Height', description: 'Full body harness inspection, lanyard anchorage, edge protection, static lines, and trauma suspension relief.', duration: '1 Day', certification: 'Work at Height Pass' },
+  { id: 'c-fall-prot', title: 'FALL PROTECTION AWARENESS TRAINING', category: 'Scaffolding & Height', description: 'Hierarchy of fall controls, collective barrier protection, personal fall arrest systems, and swing fall calculations.', duration: '1 Day', certification: 'Fall Protection Card' },
+  { id: 'c-ladder', title: 'LADDER SAFETY AWARENESS TRAINING', category: 'Scaffolding & Height', description: 'Safe angle ratio (4:1), 3-point contact, step ladder stabilization, pre-use inspection, and load limits.', duration: 'Half Day', certification: 'Ladder Safety Card' },
+
+  // Lifting & Rigging
+  { id: 'c-lift-op', title: 'LIFTING EQUIPMENT OPERATOR TRAINING', category: 'Lifting & Rigging', description: 'Safe operation of mobile, crawler, and overhead cranes, load charts, limits, and outrigger ground stability.', duration: '2 - 3 Days', certification: 'Crane Operator Card' },
+  { id: 'c-lift-eng', title: 'LIFTING ENGINEER TRAINING COURSE', category: 'Lifting & Rigging', description: 'Engineering lift planning, center of gravity analysis, ground pressure calculations, and tandem lift dynamics.', duration: '3 - 5 Days', certification: 'Lifting Engineer Certificate' },
+  { id: 'c-lift-sup', title: 'LIFTING SUPERVISOR TRAINING', category: 'Lifting & Rigging', description: 'Supervising critical crane lifts, crane position setup, team briefing, exclusion zone enforcement, and lift plans.', duration: '2 Days', certification: 'Lifting Supervisor Card' },
+  { id: 'c-rigger', title: 'RIGGER SAFETY TRAINING', category: 'Lifting & Rigging', description: 'Rigging hardware selection, wire rope sling inspection, load hitch types (choker, basket, vertical), and SWL math.', duration: '2 Days', certification: 'Certified Rigger' },
+  { id: 'c-signal', title: 'SIGNAL MAN TRAINING', category: 'Lifting & Rigging', description: 'Standardized international hand and whistle signals for crane operators, blind lifts, and two-way radio protocols.', duration: '1 Day', certification: 'Signal Man Card' },
+  { id: 'c-banksman', title: 'BANKSMAN TRAINING', category: 'Lifting & Rigging', description: 'Vehicle maneuvering, site blind spot management, pedestrian segregation, and plant directional signaling.', duration: '1 Day', certification: 'Banksman Certificate' },
+  { id: 'c-flagman', title: 'FLAGMAN TRAINING', category: 'Lifting & Rigging', description: 'Highway and construction access road traffic management, flag positioning, and safe driver guidance.', duration: '1 Day', certification: 'Flagman Safety Card' },
+  { id: 'c-eot-crane', title: 'EOT CRANE AWARENESS TRAINING', category: 'Lifting & Rigging', description: 'Electric Overhead Traveling crane operation, pendant controls, hoist limits, brake checks, and factory rigging.', duration: '1 Day', certification: 'EOT Crane Operator' },
+
+  // Earth Moving & Heavy Machinery
+  { id: 'c-earth-op', title: 'EARTH MOVING EQUIPMENT OPERATORS TRAINING', category: 'Heavy Equipment', description: 'Comprehensive competency training for heavy site machinery, daily pre-checks, blind spots, and safe digging.', duration: '2 - 3 Days', certification: 'Earthmoving Operator Pass' },
+  { id: 'c-excavator-op', title: 'EXCAVATOR OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Hydraulic excavator stability, trench embankment safety, swing radius clearance, and attachment changes.', duration: '2 Days', certification: 'Excavator Operator Card' },
+  { id: 'c-wheel-loader-op', title: 'WHEEL LOADER AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Wheel loader bucket management, travel stability on slopes, reversing safety, and dump truck loading cycles.', duration: '2 Days', certification: 'Wheel Loader Operator Card' },
+  { id: 'c-backhoe-op', title: 'BACKHOE LOADER OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'JCB / backhoe front loader and rear digging controls, stabilizer deployment, and road transit safety.', duration: '2 Days', certification: 'Backhoe Operator Card' },
+  { id: 'c-bobcat-op', title: 'BOBCAT OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Skid-steer compact loader agility, rollover prevention, attachment lockout, and confined site clearing.', duration: '1 - 2 Days', certification: 'Skid Steer Operator Card' },
+  { id: 'c-forklift-op', title: 'FORKLIFT OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Stability triangle, mast tilt controls, load center calculations, pedestrian zones, and warehouse stacking.', duration: '1 - 2 Days', certification: 'Forklift Operator License' },
+  { id: 'c-cradle-op', title: 'CRADLE OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Building Maintenance Unit (BMU) and suspended cradle operation, secondary wire ropes, and harness safety.', duration: '1 Day', certification: 'Cradle Operator Card' },
+  { id: 'c-concrete-bucket', title: 'CONCRETE BUCKET OPERATOR AWARENESS TRAINING', category: 'Heavy Equipment', description: 'Crane-suspended concrete skip handling, discharge valve operation, wash-out safety, and pinch point hazard.', duration: '1 Day', certification: 'Concrete Operator Card' },
+  { id: 'c-container-hand', title: 'CONTAINER HANDLING SAFETY AWARENESS', category: 'Heavy Equipment', description: 'Reach stacker operations, twistlock engagement verification, corner casting integrity, and yard stacking safety.', duration: '1 Day', certification: 'Container Safety Card' },
+  { id: 'c-mechanic-train', title: 'MECHANIC TRAINING', category: 'Heavy Equipment', description: 'Heavy equipment diagnostic safety, hydraulic pressure release, lock-out tagging, and preventative servicing.', duration: '3 Days', certification: 'Certified Heavy Mechanic' },
+
+  // Electrical & Instrumentation
+  { id: 'c-elec-tech', title: 'ELECTRONICS TECHNICAL TRAINING', category: 'Electrical & Technical', description: 'Diagnostic testing, circuit board component safety, soldering controls, and low-voltage calibration.', duration: '2 - 3 Days', certification: 'Electronics Technician' },
+  { id: 'c-elec-safe', title: 'ELECTRICAL SAFETY TRAINING', category: 'Electrical & Technical', description: 'Arc flash protection, high-voltage clearances, earthing systems, residual current devices (RCD), and PPE.', duration: '1 Day', certification: 'Electrical Safety Pass' },
+  { id: 'c-basic-elec', title: 'BASIC ELECTRICAL SAFETY AWARENESS TRAINING', category: 'Electrical & Technical', description: 'Fundamentals of electrical hazard identification, damaged cord prevention, and temporary jobsite power.', duration: 'Half Day', certification: 'Electrical Awareness Card' },
+  { id: 'c-loto', title: 'LOCKOUT AND TAGOUT (LOTO) TRAINING', category: 'Electrical & Technical', description: 'Zero energy state verification, padlock isolation, tagout documentation, and multi-lock hasps procedures.', duration: '1 Day', certification: 'Authorized LOTO Officer' },
+  { id: 'c-power-tools', title: 'POWER TOOLS AWARENESS TRAINING', category: 'Electrical & Technical', description: 'Angle grinders, circular saws, rotary hammers, deadman switches, machine guards, and vibration control.', duration: 'Half Day', certification: 'Power Tool Safety Card' },
+  { id: 'c-inst-tech', title: 'INSTRUMENTATION, ELECTRICAL, ELECTRONICS, MECHANICAL & CIVIL TECHNOLOGY TRAINING', category: 'Electrical & Technical', description: 'Integrated multi-disciplinary technical program covering sensor calibration, electrical circuits, and mechanical alignment.', duration: '5 Days', certification: 'Advanced Technology Diploma' },
+
+  // Welding & Fabrication
+  { id: 'c-welder-safe', title: 'WELDER SAFETY TRAINING', category: 'Welding & Hot Work', description: 'Hot work safety permits, UV radiation shields, fire blanket placement, fume extraction, and cylinder handling.', duration: '1 Day', certification: 'Welding Safety Pass' },
+  { id: 'c-welder-aware', title: 'WELDING SAFETY AWARENESS TRAINING', category: 'Welding & Hot Work', description: 'Basic welding hazards, burn prevention, eye flash mitigation, and compressed gas cylinder transportation.', duration: 'Half Day', certification: 'Hot Work Awareness Card' },
+  { id: 'c-bar-bending', title: 'BAR BENDING AWARENESS TRAINING', category: 'Welding & Hot Work', description: 'Mechanical rebar bending machine operation, hand trapping hazards, rebar alignment, and PPE requirements.', duration: '1 Day', certification: 'Rebar Safety Card' },
+  { id: 'c-bar-cutting', title: 'BAR CUTTING AWARENESS TRAINING', category: 'Welding & Hot Work', description: 'Safe cutting machine operation, flying debris protection, blade guard verification, and scrap handling.', duration: '1 Day', certification: 'Bar Cutting Operator Card' },
+
+  // HSE & Construction General
+  { id: 'c-gen-safe-aware', title: 'GENERAL SAFETY AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Core principles of workplace health and safety, reporting unsafe conditions, and safety culture commitment.', duration: 'Half Day', certification: 'General Safety Card' },
+  { id: 'c-gen-safe-const', title: 'GENERAL SAFETY AT CONSTRUCTION TRAINING', category: 'HSE & Industrial', description: 'Comprehensive site induction covering PPE, housekeeping, excavation, mobile plant, and work at height.', duration: '1 Day', certification: 'Construction Safety Card' },
+  { id: 'c-gen-safe-ind', title: 'GENERAL SAFETY INDUSTRIAL TRAINING', category: 'HSE & Industrial', description: 'Factory and plant safety protocols, machine guarding, conveyor belt safety, and chemical storage.', duration: '1 Day', certification: 'Industrial Safety Card' },
+  { id: 'c-manual-hand', title: 'MANUAL HANDLING TRAINING', category: 'HSE & Industrial', description: 'Ergonomic lifting techniques, kinetic lifting methods, spine protection, load assessment, and team lifting.', duration: 'Half Day', certification: 'Ergonomics Certificate' },
+  { id: 'c-ppe', title: 'PPE TRAINING', category: 'HSE & Industrial', description: 'Correct selection, fitting, maintenance, and inspection of hard hats, safety boots, goggles, and respirators.', duration: 'Half Day', certification: 'PPE Compliance Card' },
+  { id: 'c-ptw', title: 'PERMIT TO WORK (PTW) AWARENESS TRAINING', category: 'HSE & Industrial', description: 'PTW roles (issuer, receiver, performer), hot work, cold work, confined space, and permit closure protocols.', duration: '1 Day', certification: 'PTW Authorized Holder' },
+  { id: 'c-hira', title: 'HIRA TRAINING (HAZARD IDENTIFICATION & RISK ASSESSMENT)', category: 'HSE & Industrial', description: 'Systematic risk ranking matrix (likelihood x consequence), ALARP principle, and hierarchy of risk control.', duration: '1 Day', certification: 'Risk Assessor Certificate' },
+  { id: 'c-risk-assess', title: 'RISK ASSESSMENT GENERAL AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Everyday hazard perception on jobsites, dynamic risk assessment, and Take 5 pre-task safety pauses.', duration: 'Half Day', certification: 'Risk Awareness Card' },
+  { id: 'c-excav-safe', title: 'EXCAVATION SAFETY AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Soil mechanics, benching, battering, hydraulic trench shoring, underground service detection, and ladder access.', duration: '1 Day', certification: 'Excavation Safety Card' },
+  { id: 'c-spill-kit', title: 'SPILL KIT AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Immediate containment of oil and chemical leaks, absorbent booms, neutralization pads, and contaminated disposal.', duration: 'Half Day', certification: 'Spill Responder Card' },
+  { id: 'c-heat-stress', title: 'HEAT STRESS AWARENESS TRAINING', category: 'HSE & Industrial', description: 'UAE summer midday work regulations, hydration guidelines, heat exhaustion symptoms, and heat stroke emergency triage.', duration: 'Half Day', certification: 'Heat Safety Card' },
+  { id: 'c-hazard-work', title: 'HAZARDOUS WORKPLACE TRAINING', category: 'HSE & Industrial', description: 'Identification and mitigation of complex multi-hazard industrial work areas, ATEX zoning, and explosive risks.', duration: '1 Day', certification: 'Hazard Mitigation Card' },
+  { id: 'c-road-safe', title: 'ROAD SAFETY AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Defensive driving on UAE roads, logistics fleet speed management, seatbelt compliance, and fatigue awareness.', duration: '1 Day', certification: 'Defensive Driving Card' },
+  { id: 'c-transport-log', title: 'TRANSPORT AND LOGISTICS SAFETY AWARENESS TRAINING', category: 'HSE & Industrial', description: 'Heavy truck load securing, strapping standards, axle weight distribution, reversing guides, and dock safety.', duration: '1 Day', certification: 'Logistics Safety Card' },
+  { id: 'c-aviation', title: 'AVIATION MANAGEMENT TRAINING', category: 'HSE & Industrial', description: 'Airport apron ground safety, foreign object debris (FOD) control, fueling safety, and airside GSE operations.', duration: '2 - 3 Days', certification: 'Aviation Safety Certificate' },
+  { id: 'c-accident-invest', title: 'ACCIDENT INVESTIGATION TRAINING', category: 'HSE & Industrial', description: 'Root Cause Analysis (RCA), 5 Whys, evidence collection, witness interview techniques, and corrective action plans.', duration: '2 Days', certification: 'Accident Investigator Card' },
+];
+
+export const popularTrainingEn: PopularTrainingProgram[] = [
+  { id: 'tr-rigging', title: 'Lifting & Rigging', iconName: 'Anchor', description: 'Crane signaling, slinging methods, load calculations, and lift planning safety.' },
+  { id: 'tr-heavy-eq', title: 'Heavy Equipment', iconName: 'Truck', description: 'Excavators, loaders, dump trucks, and site earthmoving machinery operation.' },
+  { id: 'tr-scaffold', title: 'Scaffolding', iconName: 'Layers', description: 'Safe erection, modification, dismantling, and supervisory safety compliance.' },
+  { id: 'tr-hse', title: 'HSE', iconName: 'ShieldAlert', description: 'Job Safety Analysis (JSA), hazard identification, and risk control hierarchy.' },
+  { id: 'tr-first-aid', title: 'First Aid', iconName: 'HeartPulse', description: 'Life-saving emergency response, CPR, trauma care, and AED operation.' },
+  { id: 'tr-fire', title: 'Fire Fighting', iconName: 'Flame', description: 'Workplace fire chemistry, fire extinguisher operation, and site evacuation.' },
+  { id: 'tr-confined', title: 'Confined Space', iconName: 'Box', description: 'Atmospheric gas testing, entry permits, ventilation, and emergency rescue.' },
+  { id: 'tr-welding', title: 'Welding', iconName: 'Zap', description: 'Multi-position welding qualifications (1G to 6G) and welding safety.' },
+];
+
+export const industriesEn: Industry[] = [
+  {
+    id: 'ind-construction',
+    title: 'Construction & Civil Works',
+    description: 'Tower cranes, scaffolding inspection, excavation shoring, and workforce safety certifications.',
+    image: '/images/industry-construction.jpg',
+  },
+  {
+    id: 'ind-oilgas',
+    title: 'Oil & Gas (Onshore & Offshore)',
+    description: 'Pressure vessel certification, H2S toxic gas training, explosion-proof gear, and offshore lifting.',
+    image: '/images/industry-oilgas.jpg',
+  },
+  {
+    id: 'ind-manufacturing',
+    title: 'Manufacturing & Plants',
+    description: 'Overhead traveling cranes, machinery guarding audits, LOTO procedures, and boiler inspections.',
+    image: '/images/industry-manufacturing.jpg',
+  },
+  {
+    id: 'ind-infrastructure',
+    title: 'Infrastructure & Utilities',
+    description: 'Bridge building, tunneling equipment, high-voltage instrumentation, and water pipelines.',
+    image: '/images/industry-infrastructure.jpg',
+  },
+  {
+    id: 'ind-heavyequipment',
+    title: 'Plant Hire & Fleet Yards',
+    description: 'Third-party certification and statutory mechanical audit for excavator, crane, and loader rental yards.',
+    image: '/images/industry-heavyequipment.jpg',
+  },
+  {
+    id: 'ind-logistics',
+    title: 'Transport, Ports & Logistics',
+    description: 'Forklift driver qualifications, container handling, harbor crane tackle, and freight terminal safety.',
+    image: '/images/industry-logistics.jpg',
+  },
+];
+
+export const whyChooseUsEn: WhyChooseUsItem[] = [
+  {
+    number: '01',
+    title: 'Experienced Certified Trainers',
+    description: 'Instructors with deep industrial and offshore field credentials delivering practical jobsite readiness.',
+  },
+  {
+    number: '02',
+    title: 'Practical Hands-on Training',
+    description: 'Real-world machinery operation, live fire simulators, and physical rigging gear instead of pure theory.',
+  },
+  {
+    number: '03',
+    title: 'Recognized Standards & Approvals',
+    description: 'Aligned with UAE Federal codes, Dubai Municipality standards, DET licenses, and EIAC accreditation requirements.',
+  },
+  {
+    number: '04',
+    title: 'On-site & Off-shore Mobilization',
+    description: 'Rapid deployment across all seven Emirates with self-contained mobile testing and training setups.',
+  },
+];
+
+export const processStepsEn: ProcessStep[] = [
+  {
+    step: '01',
+    title: 'Inquire & Define Scope',
+    description: 'Submit your requirements via our online quote form, WhatsApp, or phone consultation.',
+  },
+  {
+    step: '02',
+    title: 'Technical Evaluation',
+    description: 'Our certified engineers review equipment specs, training curricula, or compliance standards needed.',
+  },
+  {
+    step: '03',
+    title: 'Mobilization & Schedule',
+    description: 'We deploy certified inspectors or instructors to your site or offshore location across the UAE.',
+  },
+  {
+    step: '04',
+    title: 'Inspection or Training Delivery',
+    description: 'Rigorous diagnostic testing, load testing, or hands-on training executed with calibrated instruments.',
+  },
+  {
+    step: '05',
+    title: 'Official Certification & Tags',
+    description: 'Prompt issuance of statutory inspection certificates, green safety tags, and accredited operator passes.',
+  },
+];
+
+export const companyIntroductionEn: CompanyIntroduction = {
+  greeting: 'Dear Valued Clients & Industry Partners,',
+  introParagraph1:
+    'The ClearEarth safety consultancy LLC is established last July 27, 2026, in Dubai, UAE, to become a trusted benchmark in the United Arab Emirates industrial safety ecosystem. We are dedicated to providing premier Third-Party Inspection, Occupational Safety Consultancy, Statutory Equipment Certification, Assessment, Safety & Technical Training, Calibration & Instrumentation across On-shore and Off-shore sectors including Construction, Oil & Gas, Manufacturing, Heavy Plant, and Infrastructure.',
+  introParagraph2:
+    "Our operations are engineered to fulfill the stringent requirements of statutory regulatory authorities and corporate end-users. We maintain an uncompromising commitment to precision, jobsite safety, and human life preservation across every project we engage with.",
+  introParagraph3:
+    'Our services meet the recognized national and international codes set forth by UAE government bodies, Dubai Municipality, EIAC accreditation frameworks, and international ISO directives. We build lasting trust through rigorous compliance and technical integrity.',
+  introParagraph4:
+    'We welcome you to partner with ClearEarth Safety Consultancy LLC as we build a safer, more competent industrial workforce across the Emirates.',
+  regards: 'Thanks and Regards,',
+  signees: [
+    {
+      name: 'Ms. Christel Alvarez Acula',
+      role: 'General Manager / Owner',
+      subRole: '100% Shares Owner (LLC - SO)',
+    },
+    {
+      name: 'Mr. Rodel Lausin Acula',
+      role: 'Technical Manager',
+      subRole: 'Mechanical Engineer & Certified Safety Specialist',
+    },
+  ],
+  qualityPolicy: {
+    title: 'Quality Policy',
+    description:
+      'ClearEarth Safety Consultancy LLC always endeavors for the provision of best quality services to all of its valued clients through quality management system implementation and maintenance to meet regulatory requirements and ISO / Dubai statutory standards which are continuously monitored and updated to ensure full compliance with them.',
+    bgImage: '/images/hero-industrial.jpg',
+  },
+  vision: {
+    title: 'Vision',
+    description:
+      'To become a benchmark leader in Safety Consultancy, Equipment Inspection, and Workforce Competency in the UAE and regional industrial sectors through quality services, timely performances, efficiency, and safe operations.',
+  },
+  mission: {
+    title: 'Mission',
+    description:
+      'Providing top-class certified engineers, technical inspectors, and qualified trainers to satisfy all client requirements through a well-trained and highly skilled team that corresponds to recognized environmental standards, occupational health regulations, and statutory codes.',
+  },
+  standardsOfServices: {
+    title: 'Standards of Service',
+    items: [
+      {
+        title: 'Client Satisfaction',
+        description: 'Dedicated to exceeding client safety expectations, asset uptime, and enduring trust.',
+      },
+      {
+        title: 'Accuracy & Integrity',
+        description: 'Rigorous engineering diagnostics, calibrated precision instrumentation, and uncompromising compliance.',
+      },
+      {
+        title: 'Punctuality & Commitment',
+        description: 'Rapid mobilization across the Emirates, strict timeline adherence, and prompt report generation.',
+      },
+      {
+        title: 'Open Communication',
+        description: 'Promoting transparent safety dialogue and actionable hazard reviews to elevate jobsite productivity.',
+      },
+    ],
+  },
+};
+
+export const commercialLicenseEn: CommercialLicenseDetails = {
+  licenseNo: '1639056',
+  companyNameEn: 'CLEAREARTH SAFETY CONSULTANCY L.L.C',
+  companyNameAr: 'كليرايرث لاستشارات السلامة ش.ذ.م.م',
+  businessNameEn: 'CLEAREARTH SAFETY CONSULTANCY L.L.C',
+  businessNameAr: 'كليرايرث لاستشارات السلامة ش.ذ.م.م',
+  licenseCategoryEn: 'Dep. of Economy and Tourism (DET), Government of Dubai',
+  licenseCategoryAr: 'دائرة الاقتصاد والسياحة - حكومة دبي',
+  legalTypeEn: 'Limited Liability Company - Single Owner (LLC - SO)',
+  legalTypeAr: 'شركة ذات مسؤولية محدودة - الشخص الواحد (ش.ذ.م.م)',
+  expiryDate: '30/07/2027',
+  issueDate: '31/07/2026',
+  dcciNo: '695698',
+  registerNo: '2896808',
+  mainLicenseNo: '1639056',
+  managerEn: 'CHRISTEL ALVAREZ ACULA',
+  managerAr: 'كريستل الفاريل اكولا',
+  nationalityEn: 'Philippines',
+  nationalityAr: 'الفلبين',
+  sharePercentage: '100.00%',
+  activityEn: 'Occupational Safety Consultancy',
+  activityAr: 'استشارات السلامة والصحة المهنية',
+  statusEn: 'Active',
+  statusAr: 'فعال',
+  parcelId: '127-345',
+  addressEn: 'Office A-092, Hor Al Anz & Al Satwa, Dubai, UAE',
+  addressAr: 'مكتب رقم A-092 هور العنز والسطوة، دبي، الإمارات العربية المتحدة',
+  phone: '+971 52 484 8216',
+  email: 'clearearthsafety@gmail.com',
+  documentImage: '/images/commercial-license.png',
+};
+
+export const governmentApprovalsEn: GovernmentApprovalItem[] = [
+  {
+    id: 'appr-eiac',
+    authority: 'EIAC (Emirates International Accreditation Centre)',
+    title: 'Inspection Body Accreditation / Preliminary Approval',
+    approvalType: 'Inspection Body (جهة تفتيش) & Occupational Health & Safety Consultancy',
+    docNumber: 'Approval No. 1787307',
+    date: '29/07/2026',
+    status: 'Official NOC Issued',
+    summary: 'Official No-Objection Certificate issued by EIAC to Dubai Department of Economy and Tourism recommending new license for ClearEarth Safety Consultancy LLC for Inspection Body activities and Occupational Health and Safety Consultancy.',
+    documentImage: '/images/eiac-approval.png',
+    pdfUrl: '/images/eiac-noc.pdf',
+    isPlaceholder: false,
+  },
+  {
+    id: 'appr-det',
+    authority: 'Government of Dubai — Economy and Tourism (DET)',
+    title: 'Official Commercial License',
+    approvalType: 'Occupational Safety Consultancy (استشارات السلامة والصحة المهنية)',
+    docNumber: 'License No. 1639056 | Reg. 2896808',
+    date: '31/07/2026',
+    status: 'Active Commercial License',
+    summary: 'Commercial registration with Dubai Department of Economy and Tourism (DET) and Dubai Chamber of Commerce (DCCI No. 695698) establishing ClearEarth Safety Consultancy LLC.',
+    documentImage: '/images/commercial-license.png',
+    isPlaceholder: false,
+  },
+];
+
+export const galleryItemsEn: GalleryItem[] = [
+  { id: 'gal-1', title: 'Heavy Hydraulic Excavator Inspection', category: 'Heavy Equipment', image: '/images/heavy-equipment.jpg', caption: 'Thorough statutory examination and hydraulic system load audit in Dubai.' },
+  { id: 'gal-2', title: 'Dubai Industrial & Skyline Operations', category: 'Dubai Projects', image: '/images/dubai-skyline.png', caption: 'Serving high-profile construction and infrastructure developments across Dubai.' },
+  { id: 'gal-3', title: 'Mobile Crane Proof Load Testing', category: 'Cranes & Lifting', image: '/images/lifting-inspection.jpg', caption: 'Safe Load Indicator calibration and structural deflection measurement.' },
+  { id: 'gal-4', title: 'Scaffolding System Auditing & Green Tagging', category: 'Scaffolding', image: '/images/scaffolding.jpg', caption: 'Independent facade and access scaffold tie verification for work at height.' },
+  { id: 'gal-5', title: 'Rigging Hardware & Alloy Slings', category: 'Rigging', image: '/images/lifting-accessories.jpg', caption: 'Color-coded safety tagging, shackle proof loading, and chain sling verification.' },
+  { id: 'gal-6', title: 'Pressure Vessel Ultrasonic Wall Testing', category: 'Inspections', image: '/images/pressure-vessel.jpg', caption: 'Non-destructive ultrasonic thickness testing on compressed air receiver tanks.' },
+  { id: 'gal-7', title: 'Non-Destructive Weld Examination (NDT)', category: 'Inspections', image: '/images/ndt-testing.jpg', caption: 'Magnetic particle testing (MT) and liquid penetrant inspection on structural joints.' },
+  { id: 'gal-8', title: 'Practical Operator & Safety Training', category: 'Safety Training', image: '/images/training.jpg', caption: 'Field-oriented operator safety qualifications and life-saving first aid.' },
+  { id: 'gal-9', title: 'Precision Industrial Instrumentation', category: 'Instrumentation', image: '/images/instrumentation.jpg', caption: 'Hydrostatic pressure gauges and temperature sensor calibration.' },
+  { id: 'gal-10', title: 'Safety Engineering On-Site Consultation', category: 'Consultancy', image: '/images/about-consultant.jpg', caption: 'ClearEarth certified safety engineer reviewing statutory site compliance.' },
+];
+
+export const activityDivisionsEn: ActivityDivision[] = [
+  {
+    id: 'div-inspection',
+    divisionNumber: '01',
+    title: 'INSPECTION AND CERTIFICATION OF ON-SHORE AND OFF-SHORE EQUIPMENT',
+    subtitle: 'Comprehensive third-party examination, load testing, and statutory certification.',
+    themeColor: 'green',
+    items: [
+      { id: 'lifting-eq', name: 'Lifting Equipment', description: 'Mobile cranes, crawler cranes, tower cranes, overhead gantry cranes, and winches.', iconName: 'Anchor' },
+      { id: 'lifting-acc', name: 'Lifting Accessories', description: 'Wire rope slings, chain blocks, alloy shackles, synthetic webbing slings, and lifting beams.', iconName: 'Link' },
+      { id: 'pressure-vess', name: 'Pressure Vessel', description: 'Compressed air receivers, steam boilers, storage tanks, and safety pressure relief valves.', iconName: 'Gauge' },
+      { id: 'earth-moving', name: 'Earth Moving Machineries', description: 'Excavators, wheel loaders, backhoes, bulldozers, dump trucks, and compaction rollers.', iconName: 'Truck' },
+      { id: 'scaffolding', name: 'Scaffolding', description: 'Independent scaffold auditing, tie verification, baseplate checks, and green tagging handover.', iconName: 'Layers' },
+      { id: 'ndt', name: 'NDT (Non Destructive Test)', description: 'Ultrasonic (UT), Magnetic Particle (MT), Liquid Penetrant (PT), and Visual Inspection (VT).', iconName: 'ScanLine' },
+    ],
+  },
+  {
+    id: 'div-training',
+    divisionNumber: '02',
+    title: 'ASSESSMENT AND TRAINING',
+    subtitle: 'Competency development and safety operator certification programs.',
+    themeColor: 'blue',
+    items: [
+      { id: 'tr-earth-moving', name: 'Earth Moving Machine Operator Training', description: 'Certified operation, hazard control, and pre-start inspection for earthmoving fleet.', iconName: 'Truck' },
+      { id: 'tr-lifting-eq', name: 'Lifting Equipment Operator Training', description: 'Operator certification for mobile cranes, overhead cranes, and boom trucks.', iconName: 'Activity' },
+      { id: 'tr-rigger', name: 'Rigger Signal man, and Slinger and Banksman Training', description: 'Standardized hand signals, rigging hitching, sling angle math, and banksman duties.', iconName: 'Radio' },
+      { id: 'tr-scaffold-erect', name: 'Scaffolding Erector and Supervisor Training', description: 'BS/EN scaffold erection methods, stability calculation, inspection, and supervisory sign-off.', iconName: 'Layers' },
+      { id: 'tr-fire-fight', name: 'Fire Fight Training', description: 'Practical live fire extinguisher handling, fire chemistry, and jobsite evacuation protocol.', iconName: 'Flame' },
+      { id: 'tr-hse', name: 'HSE Training', description: 'Health, Safety & Environment foundational training, risk assessment, and hazard identification.', iconName: 'ShieldAlert' },
+      { id: 'tr-heavy-eq', name: 'Heavy Equipment Operator Training', description: 'Heavy machinery safety protocols, stability limits, and site maneuvering certification.', iconName: 'Compass' },
+      { id: 'tr-lifting-sup', name: 'Lifting Supervisor Training', description: 'Critical lift planning, tandem lifting oversight, ground load bearing, and site safety management.', iconName: 'Award' },
+      { id: 'tr-welder', name: 'Welder Training 1G, 2G, 3G, 4G, 5G & 6G', description: 'Multi-position welding qualifications, hot work precautions, and weld testing standards.', iconName: 'Zap' },
+      { id: 'tr-first-aid', name: 'First Aid Training', description: 'Life-saving first response, CPR, AED usage, hemorrhage management, and trauma care.', iconName: 'HeartPulse' },
+      { id: 'tr-confined-space', name: 'Confined Space Training', description: 'Gas detection, atmospheric ventilation, entry permit systems, and emergency rescue drills.', iconName: 'Box' },
+      { id: 'tr-heavy-mech', name: 'Heavy Equipment Mechanic Training', description: 'Hydraulic safety diagnostics, mechanical maintenance standards, and preventive audit training.', iconName: 'Wrench' },
+    ],
+  },
+  {
+    id: 'div-instrumentation',
+    divisionNumber: '03',
+    title: 'INSTRUMENTATION',
+    subtitle: 'Supply, calibration, testing, and precision certification of industrial instruments.',
+    themeColor: 'green',
+    items: [
+      { id: 'inst-pressure', name: 'Pressure Gauges', description: 'Analog and digital pressure gauges, hydrostatic testing, and precision calibration certification.', iconName: 'Gauge' },
+      { id: 'inst-electrical', name: 'Electrical Instrument', description: 'High-voltage insulation testers (Meggers), multimeters, clamp meters, and earth resistance meters.', iconName: 'Zap' },
+      { id: 'inst-flow', name: 'Flow Meters', description: 'Electromagnetic, ultrasonic, and turbine flow measurement devices calibration and testing.', iconName: 'Waves' },
+      { id: 'inst-temperature', name: 'Temperature Gauges', description: 'Bimetal thermometers, RTD sensors, thermocouples, and infrared thermal instruments.', iconName: 'Thermometer' },
+      { id: 'inst-surveying', name: 'Surveying Instruments', description: 'Total stations, optical automatic levels, theodolites, and rotary lasers calibration.', iconName: 'Crosshair' },
+      { id: 'inst-gas', name: 'Gas Equipment', description: 'Single and multi-gas personal monitors, fixed gas detection systems, and calibration bump tests.', iconName: 'Wind' },
+    ],
+  },
+];
+
+export const uiEn = {
+  getQuote: 'Get a Quote',
+  exploreServices: 'Explore Services',
+  exploreTraining: 'Explore Training Programs',
+  whatWeDo: 'What We Do',
+  whatWeDoSub: 'Core safety and technical capabilities delivered with engineering rigor across the UAE.',
+  ourServices: 'Our Services',
+  ourServicesSub: 'Professional safety and technical solutions designed for safer workplaces.',
+  trainingHeading: 'Comprehensive Safety Training Programs',
+  trainingSub: 'Practical, accredited training courses categorized for easy navigation. Search and filter across 60+ programs.',
+  viewTraining: 'View Training Programs',
+  industriesHeading: 'Industries We Serve',
+  industriesSub: 'Proven safety inspection and technical solutions across key UAE industrial sectors.',
+  whyChooseHeading: 'Why Choose ClearEarth?',
+  howItWorksHeading: 'How It Works',
+  howItWorksSub: 'A simple, transparent process from initial inquiry to certified completion.',
+  requestQuoteHeading: 'Request a Quote / Service Inquiry',
+  requestQuoteSub: 'Connect directly with our technical team in Dubai for training, inspection, certification, or instrumentation quotes.',
+  submitRequest: 'Submit Inquiry',
+  fullName: 'Full Name',
+  companyName: 'Company Name',
+  phone: 'Phone Number',
+  email: 'Email Address',
+  serviceRequired: 'Service Required',
+  message: 'Message / Equipment or Training Details',
+  selectService: 'Select a service or course...',
+  enquirySuccessMsg: 'Thank you! Your inquiry has been received. Our Dubai technical team will contact you shortly.',
+  enquirySent: 'Inquiry Submitted Successfully',
+  learnMore: 'Learn More',
+  close: 'Close',
+  quickLinks: 'Quick Links',
+  contactInfoHeading: 'Contact Information',
+  viewDetails: 'View Details',
+  talkToExpert: 'Speak with an Expert',
+  backToTop: 'Back to Top',
+  callNow: 'Call Us Now',
+  chatWhatsApp: 'Chat on WhatsApp',
+  copyright: '© 2026 ClearEarth Safety Consultancy LLC. All Rights Reserved.',
+  companyProfileTag: 'Corporate Profile',
+  companyProfileHeading: 'Committed to Industrial Safety & Compliance Excellence',
+  viewCommercialLicense: 'View Official Commercial License',
+  verifiedLicenseTag: 'Government of Dubai Approved',
+  licenseNoLabel: 'License No.',
+  registerNoLabel: 'Register No.',
+  dcciNoLabel: 'DCCI No.',
+  legalTypeLabel: 'Legal Type',
+  issueDateLabel: 'Issue Date',
+  expiryDateLabel: 'Expiry Date',
+  statusLabel: 'Status',
+  activityLabel: 'Authorized Activity',
+  managementSignoff: 'Executive Leadership',
+  activitiesHeading: 'Company Activities',
+  activitiesSub: 'Structured capabilities covering On-Shore & Off-Shore Equipment, Assessment & Training, and Instrumentation.',
+  allDivisions: 'All Activities',
+  requestConsultation: 'Request Consultation',
+  officialDocumentNotice: 'Official Commercial License issued by Dubai Economy and Tourism.',
+};

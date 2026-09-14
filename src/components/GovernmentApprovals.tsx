@@ -86,12 +86,9 @@ export const GovernmentApprovals: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
+                    <div className="absolute bottom-4 left-4 text-white">
                       <span className="text-xs font-mono font-bold bg-brand-navy-950/80 px-3 py-1 rounded-lg backdrop-blur-md border border-white/10">
                         {item.title}
-                      </span>
-                      <span className="text-[11px] font-bold text-amber-300 bg-black/60 px-2.5 py-1 rounded-md">
-                        Date: {item.date}
                       </span>
                     </div>
                   </div>
@@ -123,7 +120,7 @@ export const GovernmentApprovals: React.FC = () => {
                     </span>
                     <span className="flex items-center gap-1.5 text-brand-navy">
                       <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-                      <span>Direct EIAC / DET Verifiable</span>
+                      <span>Direct DET Dubai Verifiable</span>
                     </span>
                   </div>
                 </div>
@@ -171,7 +168,7 @@ export const GovernmentApprovals: React.FC = () => {
                 ClearEarth Safety Consultancy LLC
               </h4>
               <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                Commercial License No. <strong className="text-white font-mono font-bold">1639056</strong> (Department of Economy & Tourism, Dubai) • Approval NOC No. <strong className="text-brand-green-light font-mono font-bold">1787307</strong> (EIAC) • Dubai Chamber of Commerce No. <strong className="text-white font-mono font-bold">695698</strong>
+                Commercial License No. <strong className="text-white font-mono font-bold">1639056</strong> (Department of Economy & Tourism, Dubai) • Dubai Chamber of Commerce No. <strong className="text-white font-mono font-bold">695698</strong>
               </p>
             </div>
           </div>
@@ -179,7 +176,7 @@ export const GovernmentApprovals: React.FC = () => {
             href="#contact"
             className="w-full lg:w-auto px-8 py-4 rounded-2xl bg-brand-green hover:bg-brand-green-hover text-white font-black text-xs sm:text-sm whitespace-nowrap shadow-[0_4px_20px_rgba(30,168,75,0.4)] transition-all hover:-translate-y-0.5 text-center"
           >
-            Request Official Accreditation Dossier
+            Request Commercial Credentials Dossier
           </a>
         </div>
 

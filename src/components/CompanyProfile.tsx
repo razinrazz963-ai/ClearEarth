@@ -52,7 +52,7 @@ export const CompanyProfile: React.FC = () => {
             </h3>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-              <strong className="text-brand-navy font-bold">ClearEarth Safety Consultancy LLC</strong> was officially established on <strong className="text-brand-navy font-bold">July 27, 2026</strong>, in Dubai, UAE, licensed under Commercial License No. <strong className="font-mono text-brand-navy font-bold">1639056</strong> by the Department of Economy and Tourism (DET), Government of Dubai.
+              <strong className="text-brand-navy font-bold">ClearEarth Safety Consultancy LLC</strong> is established in Dubai, UAE, licensed under Commercial License No. <strong className="font-mono text-brand-navy font-bold">1639056</strong> by the Department of Economy and Tourism (DET), Government of Dubai.
             </p>
 
             <p className="text-base text-slate-600 leading-relaxed font-normal">

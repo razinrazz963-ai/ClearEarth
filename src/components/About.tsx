@@ -114,8 +114,8 @@ export const About: React.FC = () => {
             {/* Bottom Quick Metrics Strip */}
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-slate-200/80">
               <div className="p-4 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
-                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Established</p>
-                <p className="text-base font-black text-brand-navy mt-0.5">July 27, 2026</p>
+                <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Licensing</p>
+                <p className="text-base font-black text-brand-navy mt-0.5">DET Dubai</p>
               </div>
               <div className="p-4 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
                 <p className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Location</p>

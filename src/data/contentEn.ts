@@ -69,7 +69,7 @@ export const heroContentEn = {
 export const aboutContentEn = {
   tag: 'About ClearEarth',
   heading: 'Building Skills & Enforcing Safety Excellence Across the UAE',
-  shortBio: 'The ClearEarth safety consultancy LLC is established last July 27, 2026, in Dubai, UAE, dedicated to delivering independent third-party inspection, technical certification, practical workforce training, and industrial instrumentation solutions.',
+  shortBio: 'ClearEarth Safety Consultancy LLC is established in Dubai, UAE, dedicated to delivering independent third-party inspection, technical certification, practical workforce training, and industrial instrumentation solutions.',
   commitmentTitle: 'Our Safety Mission',
   commitmentText: 'Dedicated to helping industrial, offshore, and construction organizations protect workforce personnel and maintain complete operational integrity through reliable, certified engineering practices.',
   pillars: [
@@ -547,7 +547,7 @@ export const processStepsEn: ProcessStep[] = [
 export const companyIntroductionEn: CompanyIntroduction = {
   greeting: 'Dear Valued Clients & Industry Partners,',
   introParagraph1:
-    'The ClearEarth safety consultancy LLC is established last July 27, 2026, in Dubai, UAE, to become a trusted benchmark in the United Arab Emirates industrial safety ecosystem. We are dedicated to providing premier Third-Party Inspection, Occupational Safety Consultancy, Statutory Equipment Certification, Assessment, Safety & Technical Training, Calibration & Instrumentation across On-shore and Off-shore sectors including Construction, Oil & Gas, Manufacturing, Heavy Plant, and Infrastructure.',
+    'ClearEarth Safety Consultancy LLC is established in Dubai, UAE, to become a trusted benchmark in the United Arab Emirates industrial safety ecosystem. We are dedicated to providing premier Third-Party Inspection, Occupational Safety Consultancy, Statutory Equipment Certification, Assessment, Safety & Technical Training, Calibration & Instrumentation across On-shore and Off-shore sectors including Construction, Oil & Gas, Manufacturing, Heavy Plant, and Infrastructure.',
   introParagraph2:
     "Our operations are engineered to fulfill the stringent requirements of statutory regulatory authorities and corporate end-users. We maintain an uncompromising commitment to precision, jobsite safety, and human life preservation across every project we engage with.",
   introParagraph3:
@@ -642,10 +642,9 @@ export const governmentApprovalsEn: GovernmentApprovalItem[] = [
   {
     id: 'appr-eiac',
     authority: 'EIAC (Emirates International Accreditation Centre)',
-    title: 'Inspection Body Accreditation / Preliminary Approval',
+    title: 'Statutory Licensing NOC / Initial Approval Recommendation',
     approvalType: 'Inspection Body (جهة تفتيش) & Occupational Health & Safety Consultancy',
     docNumber: 'Approval No. 1787307',
-    date: '29/07/2026',
     status: 'Official NOC Issued',
     summary: 'Official No-Objection Certificate issued by EIAC to Dubai Department of Economy and Tourism recommending new license for ClearEarth Safety Consultancy LLC for Inspection Body activities and Occupational Health and Safety Consultancy.',
     documentImage: '/images/eiac-approval.png',
@@ -658,7 +657,6 @@ export const governmentApprovalsEn: GovernmentApprovalItem[] = [
     title: 'Official Commercial License',
     approvalType: 'Occupational Safety Consultancy (استشارات السلامة والصحة المهنية)',
     docNumber: 'License No. 1639056 | Reg. 2896808',
-    date: '31/07/2026',
     status: 'Active Commercial License',
     summary: 'Commercial registration with Dubai Department of Economy and Tourism (DET) and Dubai Chamber of Commerce (DCCI No. 695698) establishing ClearEarth Safety Consultancy LLC.',
     documentImage: '/images/commercial-license.png',

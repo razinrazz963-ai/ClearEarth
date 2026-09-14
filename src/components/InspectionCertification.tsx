@@ -60,7 +60,7 @@ export const InspectionCertification: React.FC = () => {
             <ShieldCheck className="w-4 h-4 text-brand-green" />
             <span>Third-Party Verification & Testing</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-navy tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black text-brand-navy tracking-tight mb-4">
             Inspection & Certification
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -83,7 +83,7 @@ export const InspectionCertification: React.FC = () => {
         </div>
 
         {/* 6 MAIN INSPECTION SERVICE CARDS WITH INTEGRATED EQUIPMENT ANIMATIONS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 xl:gap-10">
           {mainServices.slice(0, 6).map((service) => {
             const isShowingLiveDiagnostic = activeAnimationCard === service.id;
 
@@ -133,11 +133,8 @@ export const InspectionCertification: React.FC = () => {
                     {/* Bottom overlay info */}
                     {!isShowingLiveDiagnostic && (
                       <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs text-slate-200">
-                        <span className="font-bold uppercase tracking-wider text-[11px]">
+                        <span className="font-bold uppercase tracking-wider text-[11px] bg-black/40 px-2.5 py-1 rounded backdrop-blur-sm">
                           On-Shore & Off-Shore
-                        </span>
-                        <span className="text-[10px] text-emerald-300 font-mono font-bold bg-black/40 px-2 py-0.5 rounded">
-                          EIAC Code Aligned
                         </span>
                       </div>
                     )}
@@ -179,30 +176,6 @@ export const InspectionCertification: React.FC = () => {
             );
           })}
         </div>
-
-        {/* EXPANSIVE FULL-WIDTH STATUTORY STANDARDS CALLOUT */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-xl flex flex-col lg:flex-row items-center justify-between gap-8 w-full">
-          <div className="flex items-center gap-5">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-brand-green/10 text-brand-green flex items-center justify-center flex-shrink-0 border border-brand-green/20">
-              <ShieldCheck className="w-10 h-10 sm:w-12 sm:h-12" />
-            </div>
-            <div>
-              <h4 className="text-xl sm:text-2xl font-black text-brand-navy">
-                Aligned with Dubai Municipality & Federal UAE Standards
-              </h4>
-              <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-                Every certificate issued includes full engineering calculations, load deflection charts, statutory stickers, and certified inspector sign-off under EIAC accreditation rules.
-              </p>
-            </div>
-          </div>
-          <button
-            onClick={() => openQuoteModal('Inspection & Certification Scope')}
-            className="w-full lg:w-auto px-8 py-4 rounded-2xl bg-brand-navy hover:bg-brand-navy-light text-white font-extrabold text-sm shadow-md whitespace-nowrap flex-shrink-0 hover:-translate-y-0.5 transition-all text-center"
-          >
-            Speak with Lead Inspector
-          </button>
-        </div>
-
       </div>
     </section>
   );

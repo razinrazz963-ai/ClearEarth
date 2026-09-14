@@ -116,7 +116,7 @@ export const mainServicesAr: MainServiceCard[] = [
     id: 'pressure-vessels',
     title: 'فحص أوعية الضغط',
     shortDesc: 'تقييم السلامة الهيكلية واختبارات السماكة لخزانات الهواء والمراجل والغلايات.',
-    image: '/images/pressure-vessel.jpg',
+    image: '/images/pressure-vessel.png',
     category: 'الفحص وإصدار الشهادات',
     bullets: [
       'خزانات ومستوعبات الهواء المضغوط',
@@ -144,7 +144,7 @@ export const mainServicesAr: MainServiceCard[] = [
     id: 'scaffolding',
     title: 'فحص واعتماد السقالات',
     shortDesc: 'تدقيق سلامة السقالات، التحقق من التثبيت والاستقرار، وإصدار البطاقات الخضراء.',
-    image: '/images/scaffolding.jpg',
+    image: '/images/scaffolding.png',
     category: 'الفحص وإصدار الشهادات',
     bullets: [
       'التدقيق الإنشائي المستقل للسقالات',
@@ -158,7 +158,7 @@ export const mainServicesAr: MainServiceCard[] = [
     id: 'ndt-testing',
     title: 'الاختبارات غير الإتلافية (NDT)',
     shortDesc: 'كشف العيوب الداخلية والسطحية ولحامات الهياكل دون إلحاق أي ضرر بالأجزاء.',
-    image: '/images/ndt-testing.jpg',
+    image: '/images/ndt-testing.png',
     category: 'الفحص وإصدار الشهادات',
     bullets: [
       'الفحص بالموجات فوق الصوتية (UT) للعيوب العميقة',

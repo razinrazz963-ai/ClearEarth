@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                     <MessageSquare className="w-4 h-4" />
                   </div>
                   <div>
-                    <p className="font-bold text-slate-500 uppercase text-[10px]">WhatsApp Rapid Response</p>
+                    <p className="font-bold text-slate-500 uppercase text-[10px]">WhatsApp</p>
                     <a
                       href={companyInfo.whatsappLink}
                       target="_blank"
@@ -161,7 +161,7 @@ export const Contact: React.FC = () => {
               <ShieldCheck className="w-8 h-8 text-brand-green flex-shrink-0" />
               <div className="text-xs">
                 <p className="font-extrabold text-white">Government of Dubai Licensed</p>
-                <p className="text-slate-300">DET Commercial License #1639056 • EIAC Aligned</p>
+                <p className="text-slate-300">DET Commercial License #1639056</p>
               </div>
             </div>
 
@@ -284,7 +284,7 @@ export const Contact: React.FC = () => {
                     >
                       <option value="Safety Training">Safety Training Programs (60+ Courses)</option>
                       <option value="Lifting Equipment Inspection">Lifting Equipment & Cranes Inspection</option>
-                      <option value="Earth Moving Machinery Inspection">Earth Moving & JCB Machinery Inspection</option>
+                      <option value="Earth Moving Machinery Inspection">Earth Moving Machinery Inspection</option>
                       <option value="Pressure Vessel Inspection">Pressure Vessel & Air Receiver Inspection</option>
                       <option value="Scaffolding Inspection & Tagging">Scaffolding Inspection & Green Tagging</option>
                       <option value="NDT Testing">Non-Destructive Testing (NDT)</option>

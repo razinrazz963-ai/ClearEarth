@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-2 text-xs font-bold text-emerald-400">
               <ShieldCheck className="w-4 h-4 text-brand-green" />
-              <span>EIAC Approval & Statutory Dubai Compliant</span>
+              <span>Statutory Dubai Compliant & Third-Party Inspection</span>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="#equipment" className="hover:text-white transition-colors">
-                  Earth Moving Machinery & JCB Audits
+                  Earth Moving Machinery Audits
                 </a>
               </li>
               <li>

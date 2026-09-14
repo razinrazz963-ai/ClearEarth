@@ -12,7 +12,7 @@ export const About: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-navy/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="site-container relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-green-50 border border-brand-green/20 text-brand-green-dark text-xs font-black uppercase tracking-wider mb-3.5 shadow-sm">
@@ -27,11 +27,11 @@ export const About: React.FC = () => {
 
         {/* 2-Column Corporate Presentation - Expansive 6-6 Split */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-16 items-center">
-          
+
           {/* Visual Column */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto w-full">
-              
+
               {/* Image Frame with Luxury Elevation */}
               <div className="relative rounded-3xl overflow-hidden shadow-[0_25px_60px_rgba(15,32,66,0.14)] border-4 border-white bg-white group">
                 <img
@@ -79,7 +79,7 @@ export const About: React.FC = () => {
 
           {/* Text Content Column */}
           <div className="lg:col-span-6 space-y-6">
-            
+
             {/* Direct Opening Statement as explicitly requested */}
             <div className="p-7 rounded-3xl bg-white border border-slate-200/90 shadow-md border-s-4 border-s-brand-green">
               <p className="text-base sm:text-lg text-slate-800 leading-relaxed font-semibold">

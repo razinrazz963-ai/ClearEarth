@@ -25,7 +25,7 @@ export const EquipmentSection: React.FC = () => {
       return item.category.includes('Lifting') || item.category.includes('High-Rise') || item.category.includes('Material');
     }
     if (activeCategory === 'Plant & Utilities') {
-      return item.category.includes('Power') || item.category.includes('Pneumatic') || item.category.includes('MEWP');
+      return item.category.includes('Power') || item.category.includes('Pneumatic') || item.category.includes('MEWP') || item.category.includes('Instrumentation');
     }
     if (activeCategory === 'Temporary Works') {
       return item.category.includes('Temporary') || item.category.includes('Rigging');
@@ -80,7 +80,7 @@ export const EquipmentSection: React.FC = () => {
                     : 'bg-white/10 text-white hover:bg-white/15'
                 }`}
               >
-                JCB / Excavator
+                Earth Moving Machinery
               </button>
               <button
                 onClick={() => setActiveLabTab('crane')}
@@ -188,7 +188,7 @@ export const EquipmentSection: React.FC = () => {
                     </p>
                     <p className="flex items-center gap-2">
                       <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                      <span>EIAC compliant statutory inspection certificate issued</span>
+                      <span>Statutory compliance inspection certificate issued</span>
                     </p>
                   </div>
                 </>

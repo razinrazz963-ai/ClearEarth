@@ -38,7 +38,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Main Headline - Bold & Expansive */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-black text-brand-navy tracking-tight leading-[1.1] mb-4 sm:mb-5">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-brand-navy tracking-tight leading-[1.08] mb-4 sm:mb-5">
               Build Skills.{' '}
               <span className="text-brand-green block sm:inline">Work Safely.</span>
             </h1>
@@ -138,7 +138,7 @@ export const Hero: React.FC = () => {
                     </p>
                     <p className="text-[11px] text-brand-green-dark font-extrabold flex items-center gap-1.5 mt-0.5">
                       <span className="w-2 h-2 rounded-full bg-brand-green animate-ping inline-block flex-shrink-0" />
-                      <span className="truncate">Dubai Municipality & EIAC Aligned</span>
+                      <span className="truncate">Dubai Municipality Aligned</span>
                     </p>
                   </div>
                 </div>
@@ -150,34 +150,34 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* STATUTORY CAPABILITIES TICKER BAR (Expansive full-width layout) */}
-        <div className="mt-12 sm:mt-16 p-5 sm:p-6 rounded-3xl bg-white border border-slate-200/80 shadow-md">
-          <div className="flex flex-wrap items-center justify-between gap-y-3 gap-x-6 text-xs sm:text-sm font-bold text-slate-700">
-            <span className="text-xs font-black uppercase tracking-wider text-brand-navy bg-brand-navy/5 border border-brand-navy/10 px-3.5 py-1.5 rounded-xl flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-brand-green" />
+        <div className="mt-12 sm:mt-16 p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-lg">
+          <div className="flex flex-wrap items-center justify-between gap-y-4 gap-x-6 text-sm sm:text-base font-bold text-slate-700">
+            <div className="text-sm sm:text-base font-black uppercase tracking-wider text-brand-navy bg-brand-green-50 border border-brand-green/25 px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl flex items-center gap-2.5 shadow-sm">
+              <ShieldCheck className="w-5 h-5 text-brand-green flex-shrink-0" />
               <span>Certified Scope</span>
-            </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
+            </div>
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
               <span>Mobile Cranes & Lifting Gear</span>
             </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
-              <span>JCB & Heavy Earth Moving</span>
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
+              <span>Earth Moving Machinery</span>
             </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
               <span>Pressure Vessels & Boilers</span>
             </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
               <span>Scaffolding Green Tagging</span>
             </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
               <span>Non-Destructive Testing (NDT)</span>
             </span>
-            <span className="flex items-center gap-2 text-brand-navy">
-              <CheckCircle2 className="w-4 h-4 text-brand-green flex-shrink-0" />
+            <span className="flex items-center gap-2.5 text-brand-navy font-extrabold">
+              <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-brand-green flex-shrink-0" />
               <span>Instrumentation Calibration</span>
             </span>
           </div>

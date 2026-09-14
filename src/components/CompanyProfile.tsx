@@ -66,8 +66,8 @@ export const CompanyProfile: React.FC = () => {
                 <p className="text-xl font-black text-brand-navy font-mono mt-1">#1639056</p>
               </div>
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
-                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">EIAC Approval</p>
-                <p className="text-xl font-black text-brand-green-dark font-mono mt-1">#1787307</p>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Dubai Chamber</p>
+                <p className="text-xl font-black text-brand-green-dark font-mono mt-1">#695698</p>
               </div>
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm">
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Headquarters</p>

@@ -55,7 +55,7 @@ export const About: React.FC = () => {
                     </p>
                     <p className="text-xs text-brand-green font-extrabold flex items-center gap-1.5 mt-0.5">
                       <span className="w-2 h-2 rounded-full bg-brand-green animate-ping inline-block" />
-                      <span>EIAC NOC Approval #1787307</span>
+                      <span>Dubai Chamber Member #695698</span>
                     </p>
                   </div>
                 </div>

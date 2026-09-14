@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { ShieldCheck, ArrowRight, CheckCircle2, Award, Building2, ChevronRight, Activity, Wrench } from 'lucide-react';
+import { ShieldCheck, ArrowRight, CheckCircle2, Award, Building2, ChevronRight, Wrench } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const { heroContent, openQuoteModal } = useLanguage();
@@ -112,11 +112,7 @@ export const Hero: React.FC = () => {
                 {/* Gradient Shadow Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-950/90 via-brand-navy-950/25 to-transparent pointer-events-none" />
 
-                {/* Floating Inspection Telemetry Badge (Top Left) */}
-                <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-brand-navy-950/85 backdrop-blur-md text-white text-[11px] font-mono font-bold shadow-lg border border-white/15">
-                  <Activity className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-                  <span>EIAC NOC #1787307</span>
-                </div>
+
 
                 {/* Top Right Location Badge */}
                 <div className="absolute top-4 right-4 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-brand-navy/90 text-white backdrop-blur-md text-xs font-extrabold shadow-md border border-white/15">
